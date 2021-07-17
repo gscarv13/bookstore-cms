@@ -18,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "stylelint": "npx stylelint '**/*.{css,scss}' --fix",
+    "eslint": "npx eslint . --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +46,6 @@
     "@babel/plugin-syntax-jsx": "7.x",
     "@babel/preset-react": "7.x",
     "@testing-library/dom": "^8.1.0",
-    "babel-jest": "^27.0.6",
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.11.0",
     "eslint": "7.x",

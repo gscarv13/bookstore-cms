@@ -6,12 +6,16 @@ const BookList = (props) => {
   const { books } = props;
   return (
     <table>
-      <tr>
-        <th>Book ID</th>
-        <th>Title</th>
-        <th>Category</th>
-      </tr>
-      {books.map((book) => <Book key={book.ID} bookInfo={book} />)}
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {books.map((book) => <Book key={book.ID} bookInfo={book} />)}
+      </tbody>
     </table>
   );
 };
@@ -21,7 +25,7 @@ BookList.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  books: state.books,
+  books: state.booksObject.books,
 });
 
 export default connect(mapStateToProps, null)(BookList);

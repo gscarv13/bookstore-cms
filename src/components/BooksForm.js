@@ -17,6 +17,9 @@ const BooksForm = () => (
         ))}
       </select>
     </div>
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
   </form>
 );
 

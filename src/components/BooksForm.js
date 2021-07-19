@@ -42,7 +42,7 @@ const BooksForm = (props) => {
         Select a Category:
         <select name="select" value={category} onChange={handleChange}>
           {categories.map((category) => (
-            <option key={category.id} value={category}>{category}</option>
+            <option key={uuidv4()} value={category}>{category}</option>
           ))}
         </select>
       </div>

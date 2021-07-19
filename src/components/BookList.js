@@ -6,7 +6,7 @@ import { removeBookAction } from '../actions';
 const BookList = (props) => {
   const { books } = props;
 
-  const handleClick = (e) => {
+  const handleRemoveBook = (e) => {
     e.preventDefault();
 
     const bookID = {
@@ -28,10 +28,11 @@ const BookList = (props) => {
       </thead>
       <tbody>
         {books.map((book) => (
-          <tr key={book.ID}>
-            <Book key={book.ID} bookInfo={book} />
-            <td><button type="button" id={book.ID} onClick={handleClick}>Delete</button></td>
-          </tr>
+          <Book
+            key={book.ID}
+            bookInfo={book}
+            handleClick={handleRemoveBook}
+          />
         ))}
       </tbody>
     </table>

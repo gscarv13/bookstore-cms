@@ -3,25 +3,24 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import './stylesheet/index.css';
+import { v4 as uuidv4 } from 'uuid';
 import App from './components/App';
 import booksReducer from './reducers/book';
-
-const randomID = () => Math.floor(Math.random() * 10);
 
 const initialState = {
   books: [
     {
-      ID: randomID(),
+      ID: uuidv4(),
       title: 'House of Sticks',
       category: 'Biography',
     },
     {
-      ID: randomID(),
+      ID: uuidv4(),
       title: 'The Hidden Knife',
       category: 'Kids',
     },
     {
-      ID: randomID(),
+      ID: uuidv4(),
       title: 'Survive The Night',
       category: 'Horror',
     },

@@ -23,6 +23,8 @@ const BooksForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (title === '') return;
+
     const book = {
       ID: uuidv4(),
       title,
@@ -30,6 +32,7 @@ const BooksForm = (props) => {
     };
 
     props.createBookAction(book);
+    setTitle('');
   };
 
   return (

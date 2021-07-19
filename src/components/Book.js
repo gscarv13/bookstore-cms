@@ -5,9 +5,9 @@ const Book = (props) => {
 
   return (
     <tr>
-      <th>{bookInfo.ID}</th>
-      <tr>{bookInfo.title}</tr>
-      <tr>{bookInfo.category}</tr>
+      <td>{bookInfo.ID}</td>
+      <td>{bookInfo.title}</td>
+      <td>{bookInfo.category}</td>
     </tr>
   );
 };

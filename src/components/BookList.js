@@ -33,25 +33,13 @@ const BookList = (props) => {
   return (
     <>
       <CategoryFilter handleChange={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filterBooks(books).map((book) => (
-            <Book
-              key={book.ID}
-              bookInfo={book}
-              handleClick={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
+      {filterBooks(books).map((book) => (
+        <Book
+          key={book.ID}
+          bookInfo={book}
+          handleClick={handleRemoveBook}
+        />
+      ))}
     </>
   );
 };

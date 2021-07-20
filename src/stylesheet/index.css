@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family:
@@ -16,12 +20,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.Bookstore-CMS {
+  background-color: #fafafa;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Main {
+  width: 100%;
+  padding: 6.25rem 3rem 6.25rem;
 }

@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import { createBookAction } from '../actions/index';
 
-const categories = [
+export const categories = [
   'Action', 'Biography', 'History',
   'Horror', 'Kids', 'Learning', 'Sci-fi',
 ];

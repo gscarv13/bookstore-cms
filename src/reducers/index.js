@@ -4,5 +4,5 @@ import filterReducer from './filter';
 
 export default combineReducers({
   booksObject: bookReducer,
-  filter: filterReducer,
+  filterObject: filterReducer,
 });

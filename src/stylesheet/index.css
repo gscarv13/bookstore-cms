@@ -59,7 +59,8 @@ body {
   background-color: inherit;
   border-radius: 50%;
   border: solid 1px #e8e8e8;
-  padding: 10px;
+  width: 35px;
+  height: 35px;
 }
 
 .Navbar-left button:nth-child(2) {

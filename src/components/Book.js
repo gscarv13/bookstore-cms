@@ -11,7 +11,7 @@ const displayFlex = {
 const calcProgress = (percent, circ) => circ - (percent * circ) / 100;
 const radius = (80 / 2) - (4 * 2);
 const calcCircumference = (radius) => radius * 2 * Math.PI;
-const currPercent = 50;
+const currPercent = Math.floor(Math.random() * 100);
 const currCircumference = calcCircumference(radius);
 
 const Book = (props) => {

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  color: #121212;
 }
 
 body {
@@ -28,5 +29,52 @@ body {
 
 .Main {
   width: 100%;
-  padding: 6.25rem 3rem 6.25rem;
+  padding: 2rem 6.25rem;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.8rem 6.25rem;
+}
+
+.Navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.Navbar-left h1 {
+  color: #0290ff;
+}
+
+.Navbar-left button {
+  border: none;
+  background-color: inherit;
+}
+
+.Navbar-left button:nth-child(2) {
+  opacity: 0.8;
+}
+
+.Navbar-left button:nth-child(3) {
+  opacity: 0.5;
+}
+
+.Navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar-right button {
+  background-color: inherit;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+  padding: 10px;
+}
+
+.Navbar-right button i {
+  color: #0290ff;
 }

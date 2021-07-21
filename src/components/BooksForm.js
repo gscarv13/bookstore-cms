@@ -38,7 +38,7 @@ const BooksForm = (props) => {
 
   return (
     <>
-      <div style={{ borderTop: '1px solid #e8e8e8' }}>
+      <div style={{ borderTop: '1px solid #e8e8e8', marginTop: '4rem' }}>
         <h3>ADD NEW BOOK</h3>
         <div className="Book-Form">
           <div>

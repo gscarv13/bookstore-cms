@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Book from './Book';
 import CategoryFilter from './CategoryFilter';
 import { removeBookAction, changeFilterAction } from '../actions';
+import '../stylesheet/index.css';
 
 const BookList = (props) => {
   const { books, filter } = props;
@@ -32,14 +33,27 @@ const BookList = (props) => {
 
   return (
     <>
-      <CategoryFilter handleChange={handleFilterChange} />
-      {filterBooks(books).map((book) => (
-        <Book
-          key={book.ID}
-          bookInfo={book}
-          handleClick={handleRemoveBook}
-        />
-      ))}
+      <nav className="Navbar">
+        <div className="Navbar-left">
+          <h1>Bookstore CMS</h1>
+          <button type="button">BOOKS</button>
+          <CategoryFilter handleChange={handleFilterChange} />
+        </div>
+        <div className="Navbar-right">
+          <button type="button">
+            <i className="fas fa-user" />
+          </button>
+        </div>
+      </nav>
+      <div className="Main">
+        {filterBooks(books).map((book) => (
+          <Book
+            key={book.ID}
+            bookInfo={book}
+            handleClick={handleRemoveBook}
+          />
+        ))}
+      </div>
     </>
   );
 };

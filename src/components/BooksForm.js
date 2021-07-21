@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import { createBookAction } from '../actions/index';
 import '../stylesheet/BookForm.css';
+import '../stylesheet/index.css';
 
 export const categories = [
   'Action', 'Biography', 'History',
@@ -38,7 +39,7 @@ const BooksForm = (props) => {
 
   return (
     <>
-      <div style={{ borderTop: '1px solid #e8e8e8', marginTop: '4rem' }}>
+      <div className="Main" style={{ borderTop: '1px solid #e8e8e8', marginTop: '4rem' }}>
         <h3>ADD NEW BOOK</h3>
         <div className="Book-Form">
           <div>

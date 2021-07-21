@@ -55,6 +55,13 @@ body {
   background-color: inherit;
 }
 
+.Navbar-right button {
+  background-color: inherit;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+  padding: 10px;
+}
+
 .Navbar-left button:nth-child(2) {
   opacity: 0.8;
 }
@@ -66,13 +73,6 @@ body {
 .Navbar-right {
   display: flex;
   align-items: center;
-}
-
-.Navbar-right button {
-  background-color: inherit;
-  border-radius: 50%;
-  border: solid 1px #e8e8e8;
-  padding: 10px;
 }
 
 .Navbar-right button i {

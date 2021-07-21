@@ -28,8 +28,8 @@ To run this project locally, make sure you have the following installed:
 
 ### Setup and Install
 
-- Clone this repository using the link above (click on the 'code' button)
-- Open a terminal and `cd` to the cloned repository
+- Clone the repository `git clone https://github.com/gscarv13/bookstore-cms.git`
+- Move to the cloned repository `cd bookstore-cms`
 - Run `yarn install` to set up all dependencies
 - Run `yarn start` to initiate development server
 

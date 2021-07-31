@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import { createBookAction } from '../actions/index';
+import '../stylesheet/BookForm.css';
+import '../stylesheet/index.css';
 
 export const categories = [
   'Action', 'Biography', 'History',
@@ -36,23 +38,26 @@ const BooksForm = (props) => {
   };
 
   return (
-    <form>
-      <div>
-        Title:
-        <input name="title" type="text" value={title} onChange={handleChange} />
+    <>
+      <div className="Main" style={{ borderTop: '1px solid #e8e8e8', marginTop: '4rem' }}>
+        <h3>ADD NEW BOOK</h3>
+        <div className="Book-Form">
+          <div>
+            <input className="Input" placeholder="Book Title" name="title" type="text" value={title} onChange={handleChange} />
+          </div>
+          <div>
+            <select className="Select" name="select" value={category} onChange={handleChange}>
+              {categories.map((category) => (
+                <option key={uuidv4()} value={category}>{category}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <input className="Button" type="submit" value="Submit" onClick={handleSubmit} />
+          </div>
+        </div>
       </div>
-      <div>
-        Select a Category:
-        <select name="select" value={category} onChange={handleChange}>
-          {categories.map((category) => (
-            <option key={uuidv4()} value={category}>{category}</option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <input type="submit" value="Submit" onClick={handleSubmit} />
-      </div>
-    </form>
+    </>
   );
 };
 

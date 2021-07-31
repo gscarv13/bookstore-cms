@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  color: #121212;
+}
+
 body {
   margin: 0;
   font-family:
@@ -16,12 +21,60 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.Bookstore-CMS {
+  background-color: #fafafa;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Main {
+  margin: 2rem 6.25rem;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.8rem 6.25rem;
+}
+
+.Navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.Navbar-left h1 {
+  color: #0290ff;
+}
+
+.Navbar-left button {
+  border: none;
+  background-color: inherit;
+}
+
+.Navbar-right button {
+  background-color: inherit;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+  width: 35px;
+  height: 35px;
+}
+
+.Navbar-left button:nth-child(2) {
+  opacity: 0.8;
+}
+
+.Navbar-left button:nth-child(3) {
+  opacity: 0.5;
+}
+
+.Navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar-right button i {
+  color: #0290ff;
 }

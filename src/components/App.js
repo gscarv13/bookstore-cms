@@ -1,10 +1,11 @@
 import BooksForm from './BooksForm';
 import BookList from './BookList';
+import '../stylesheet/index.css';
 
 const App = () => (
-  <div>
-    <BooksForm />
+  <div className="Bookstore-CMS">
     <BookList />
+    <BooksForm />
   </div>
 );
 
